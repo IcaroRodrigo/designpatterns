@@ -1,4 +1,4 @@
-package designs;
+package designs.singleton;
 
 public class Singleton {
     private static Singleton instance;
