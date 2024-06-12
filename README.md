@@ -2,6 +2,31 @@
 
 
 
+# Padrão Singleton em Java
+
+Este repositório contém um exemplo de implementação do padrão de projeto Singleton em Java. O padrão Singleton é um padrão de design criacional que garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a essa instância.
+
+## Benefícios do Uso do Padrão Singleton
+
+### 1. Controle de Instância Única
+
+O padrão Singleton assegura que uma classe tenha apenas uma instância durante o tempo de execução da aplicação. Isso é útil para gerenciar recursos compartilhados, como conexões de banco de dados, caches, ou configurações globais.
+
+### 2. Ponto de Acesso Global
+
+O Singleton fornece um ponto de acesso global à sua única instância. Isso significa que qualquer parte do código pode acessar a instância Singleton facilmente, sem a necessidade de criar múltiplas instâncias.
+
+### 3. Economia de Recursos
+
+Como apenas uma instância do Singleton é criada, há economia de recursos. Isto é especialmente benéfico quando a criação da instância é cara em termos de tempo ou recursos, como em conexões de banco de dados.
+
+### 4. Facilitação de Manutenção
+
+Com o Singleton, você centraliza a gestão da instância única, o que facilita a manutenção do estado compartilhado. Qualquer modificação no estado ou comportamento pode ser feita na única instância, evitando inconsistências.
+
+### 5. Controle Estrito de Acesso
+
+O Singleton permite controle estrito sobre como e quando a instância é criada, o que pode ser útil para implementar lógica de inicialização e garantir que a instância esteja sempre em um estado válido.
 
 
 # Padrão Factory em Java
