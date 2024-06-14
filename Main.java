@@ -1,6 +1,10 @@
 import designs.factory.Notificacao;
 import designs.factory.NotificacaoFactory;
 import designs.singleton.Singleton;
+import designs.strategy.BigTrail;
+import designs.strategy.Catalogo;
+import designs.strategy.Street;
+import designs.strategy.Trail;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,13 +22,20 @@ public class Main {
 
 
         //TESTE PADRÃO FACTORY
-        NotificacaoFactory notificacaoFactory = new NotificacaoFactory();
+        /*NotificacaoFactory notificacaoFactory = new NotificacaoFactory();
 
         Notificacao email = notificacaoFactory.criarNotificacao("Email");
         email.enviar("Ola, como vai ?");
 
         Notificacao sms = notificacaoFactory.criarNotificacao("SMS");
-        sms.enviar("SMS - OFERTA RELAMPAGO");
+        sms.enviar("SMS - OFERTA RELAMPAGO");*/
+
+        //TESTE PADRÁO STRATEGY
+        String categoria = "BigTrail";
+        String disponivel = "indisponivel";
+        Catalogo catalogo = new Catalogo(categoria,disponivel);
+        catalogo.exibirCatalogo(new Street());
+
 
     }
 }
